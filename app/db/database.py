@@ -9,9 +9,9 @@ DATABASE_URL = "postgresql://postgres:priti%40123@localhost:5432/fastapidb"
 # Check if DB exists, else create it
 if not database_exists(DATABASE_URL):
     create_database(DATABASE_URL)
-    print("✅ Database created:", DATABASE_URL)
+    print(" Database created:", DATABASE_URL)
 else:
-    print("✅ Database already exists")
+    print(" Database already exists")
 
 # Create engine
 engine = create_engine(DATABASE_URL)
